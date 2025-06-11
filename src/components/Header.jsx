@@ -5,7 +5,7 @@ const Header = ({ searchQuery, setSearchQuery, handleSearchSubmit }) => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-light">
-        <div className="container-fluid">
+        <div className="container">
           <a className="navbar-brand" href="/">
             MeetUp
           </a>

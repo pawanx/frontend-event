@@ -15,7 +15,14 @@ const Body = () => {
     setSubmittedQuery(searchQuery);
   };
 
-  if (loading) return <p>Loading...</p>;
+  if (loading)
+    return (
+      <div className="d-flex justify-content-center align-items-center vh-100">
+        <div className="spinner-border text-primary" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    );
   if (error) return <p>Error occured: {error.message}</p>;
   if (!data) return <p>No Event found.</p>;
 
